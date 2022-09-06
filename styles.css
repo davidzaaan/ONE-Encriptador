@@ -159,8 +159,9 @@ main {
 .resulting_text {
     margin: 20px;
     /* background-color: red; */
-    max-height: 75%;
-    overflow: scroll;
+    height: 75%;
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 
 .copy_to_clipboard {
