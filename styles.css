@@ -1,0 +1,179 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    --text-color: #0A3871;
+}
+
+main {
+    /* background: red; */
+    width: 100%;
+    display: flex;
+}
+
+.alura-logo {
+    width: 10%;
+    height: 100vh;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+.alura-logo svg {
+    margin: 20px;
+}
+
+.text-to-encript-container {
+    width: 50%;
+    /* background-color: aliceblue; */
+    /* padding: 40px; */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* All the text to encript styling */
+.text-to-encript {
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-to-encript-form {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-to-encript-form>textarea {
+    background-color: inherit;
+    color: var(--text-color);
+    width: 577px;
+    height: 60%;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 2em;
+}
+
+.aviso {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.aviso span {
+    margin-left: 5px;
+}
+
+.encript-buttons {
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#encriptarButton,
+#desencriptarButton {
+    width: 45%;
+    height: 67px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#encriptarButton {
+    background-color: #0A3871;
+    color: #fff;
+    transition: 400ms ease-in-out;
+}
+
+#desencriptarButton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    transition: 400ms ease-in-out;
+}
+
+#encriptarButton:hover {
+    opacity: 0.9;
+}
+
+#desencriptarButton:hover {
+    opacity: 0.9;
+}
+
+/* End of all the text to encript styling */
+
+
+/* Resulting encripted text styling */
+.encripted-text-container {
+    width: 40%;
+    /* background-color: black; */
+    display: flex;
+}
+
+.encripted_text_box {
+    width: 400px;
+    height: 670px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.text_no_found h1 {
+    font-size: 1.3em;
+}
+
+.text_no_found {
+    display: none;
+    /* background-color: red; */
+}
+
+.text_encrypted {
+    /* background-color: #0A3871; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.resulting_text {
+    margin: 20px;
+    /* background-color: red; */
+    max-height: 75%;
+    overflow: scroll;
+}
+
+.copy_to_clipboard {
+    width: 90%;
+    height: 67px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    justify-self: flex-end;
+    border: 1px solid #0A3871;
+    background-color: #fff;
+    margin: 20px;
+}
+
+/* End of resulting encripted text styling */
